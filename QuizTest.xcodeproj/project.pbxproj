@@ -14,6 +14,8 @@
 		1D4BE6E51B8DE7D000EB1B57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4BE6E41B8DE7D000EB1B57 /* Images.xcassets */; };
 		1D4BE6E81B8DE7D000EB1B57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4BE6E61B8DE7D000EB1B57 /* LaunchScreen.xib */; };
 		1D4BE6F41B8DE7D000EB1B57 /* QuizTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BE6F31B8DE7D000EB1B57 /* QuizTestTests.m */; };
+		1D4BE7001B8DE81F00EB1B57 /* QUIZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BE6FE1B8DE81F00EB1B57 /* QUIZViewController.m */; };
+		1D4BE7011B8DE81F00EB1B57 /* QUIZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4BE6FF1B8DE81F00EB1B57 /* QUIZViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		1D4BE6ED1B8DE7D000EB1B57 /* QuizTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4BE6F21B8DE7D000EB1B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4BE6F31B8DE7D000EB1B57 /* QuizTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTestTests.m; sourceTree = "<group>"; };
+		1D4BE6FD1B8DE81F00EB1B57 /* QUIZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUIZViewController.h; sourceTree = "<group>"; };
+		1D4BE6FE1B8DE81F00EB1B57 /* QUIZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QUIZViewController.m; sourceTree = "<group>"; };
+		1D4BE6FF1B8DE81F00EB1B57 /* QUIZViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QUIZViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				1D4BE6E41B8DE7D000EB1B57 /* Images.xcassets */,
 				1D4BE6E61B8DE7D000EB1B57 /* LaunchScreen.xib */,
 				1D4BE6D71B8DE7D000EB1B57 /* Supporting Files */,
+				1D4BE6FD1B8DE81F00EB1B57 /* QUIZViewController.h */,
+				1D4BE6FE1B8DE81F00EB1B57 /* QUIZViewController.m */,
+				1D4BE6FF1B8DE81F00EB1B57 /* QUIZViewController.xib */,
 			);
 			path = QuizTest;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 				1D4BE6E31B8DE7D000EB1B57 /* Main.storyboard in Resources */,
 				1D4BE6E81B8DE7D000EB1B57 /* LaunchScreen.xib in Resources */,
 				1D4BE6E51B8DE7D000EB1B57 /* Images.xcassets in Resources */,
+				1D4BE7011B8DE81F00EB1B57 /* QUIZViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				1D4BE6E01B8DE7D000EB1B57 /* ViewController.m in Sources */,
 				1D4BE6DD1B8DE7D000EB1B57 /* AppDelegate.m in Sources */,
 				1D4BE6DA1B8DE7D000EB1B57 /* main.m in Sources */,
+				1D4BE7001B8DE81F00EB1B57 /* QUIZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

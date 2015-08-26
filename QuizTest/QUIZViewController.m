@@ -10,28 +10,61 @@
 
 @interface QUIZViewController ()
 
+@property (nonatomic) int currentQuestionIndex;
+
+
+@property (nonatomic,copy) NSArray *questions;
+@property (nonatomic,copy) NSArray *answers;
+
+@property (nonatomic,weak) IBOutlet UILabel *questionLabel;
+@property (nonatomic,weak) IBOutlet UILabel *answerLabel;
 @end
 
 @implementation QUIZViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+-(instancetype) initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self) {
+        self.questions = @[@"Where are from?",
+                           @"What is 1+2?",
+                           @"What is 3!?"];
+        self.answers = @[@"China.",
+                         @"3.",
+                         @"6"];
+    }
+    
+    self.questionLabel.text = @"";
+    self.answerLabel.text = @"??";
+    return self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(IBAction)showQuestion:(id)sender
+{
+    self.currentQuestionIndex++;
+    
+    if (self.currentQuestionIndex == [self.questions count]) {
+        self.currentQuestionIndex = 0;
+    }
+    
+    NSString *question = self.questions[self.currentQuestionIndex];
+    
+    self.questionLabel.text = question;
+    
+    self.answerLabel.text = @"??";
+    
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)showAnswer:(id)sender
+{
+    NSString *answer = self.answers[self.currentQuestionIndex];
+    
+    self.answerLabel.text = answer;
 }
-*/
+
 
 @end
+
